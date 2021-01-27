@@ -10,7 +10,10 @@ class SlingShot{
         this.SlingShot= Constraint.create(options);
         World.add(world, this.SlingShot);
     }
-
+     
+    fly (){
+        this.SlingShot.bodyA=null;
+    }
       display(){
             var pointA = this.SlingShot.bodyA.position;
             var pointB = this.pointB;
